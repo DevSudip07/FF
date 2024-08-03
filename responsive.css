@@ -64,23 +64,16 @@
   z-index: -50;
 }
 
-
 .content h1 {
+  margin-bottom: 15px;
   text-align: center;
   border-bottom: 2px solid rgb(255, 0, 0);
 }
 
 .content table {
   width: 85%;
+  margin-bottom: 15px;
 }
-
-
-
-
-
-
-
-
 
 
 }
