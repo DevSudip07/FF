@@ -1,0 +1,86 @@
+@media only screen and (max-width: 600px) {
+  .mob-bg {
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: -100;
+  }
+
+  .mob-bg video {
+    width: 100%;
+  }
+
+  .nav {
+    padding: 5px 0px;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .nav i {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .nav ul {
+    position: absolute;
+    display: block;
+    top: -150px;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    padding: 20px 0px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all .5s;
+    z-index: -10;
+  }
+
+  .banner {
+    z-index: -20;
+  }
+
+  .banner h1 {
+    font-size: 12vw;
+  }
+   
+  .banner p {
+    font-size: 5vw;
+    margin: 15px 0px;
+  }
+
+
+  
+/* ================ TOURNAMENTS ================ */
+
+.container {
+  position: relative;
+  background-color: rgb(179, 116, 116);
+  padding: 20px 0px;
+  z-index: -50;
+}
+
+
+.content h1 {
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.content table {
+  width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+}
