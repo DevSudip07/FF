@@ -10,6 +10,10 @@
     --bg: #090909;
 }
 
+.loader {
+    display: none;
+}
+
 .mob-bg {
     display: none;
 }
@@ -48,7 +52,7 @@
 .nav a:hover {
     background: linear-gradient(to right, red, rgb(209, 209, 0), orange);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .banner {

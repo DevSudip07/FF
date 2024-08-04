@@ -22,3 +22,11 @@ icon.addEventListener("click", ()=>{
 document.addEventListener("contextmenu", function(e){
     e.preventDefault()
 }, false);
+
+
+var loader = document.querySelector(".loader");
+
+setTimeout(function load() {
+  loader.style.display = "none";
+}
+, 5000);
