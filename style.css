@@ -90,13 +90,14 @@
 
 .points {
   position: relative;
-  height: 200px;
+  height: 195px;
+  /* background-color: red; */
 }
 
 .points video {
   position: relative;
   width: 85%;
-  top: -198px;
+  bottom: 25vh;
   border-radius: 10px;
   z-index: -999;
 }
@@ -139,7 +140,7 @@
   /* position: relative; */
   color: var(--text);
   font-size: 4.5vw;
-  line-height: 23px;
+  line-height: 20px;
   border-radius: 10px;
 }
 
