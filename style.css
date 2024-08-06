@@ -1,89 +1,152 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 :root {
-    --text: white;
-    --bg: #090909;
+  --text: white;
+  --bg: #090909;
 }
 
 .loader {
-    display: none;
+  display: none;
 }
 
 .mob-bg {
-    display: none;
+  display: none;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px;
-    background-color: var(--bg);
-    color: var(--text);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  background-color: var(--bg);
+  color: var(--text);
 }
 .logo {
-    width: 200px;
+  width: 200px;
 }
 
 .nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
 }
 
 .nav i {
-    display: none;
+  display: none;
 }
 
 .nav ul li a {
-    font-weight: 600;
-    color: var(--text);
-    text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .nav a:hover {
-    background: linear-gradient(to right, red, rgb(209, 209, 0), orange);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: linear-gradient(to right, red, rgb(209, 209, 0), orange);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .banner {
-    position: absolute;
-    top: 200px;
+  position: absolute;
+  top: 200px;
 }
 
 .banner h1 {
-    color: var(--text);
-    text-align: center;
-    font-size: 12vw;
+  color: var(--text);
+  text-align: center;
+  font-size: 12vw;
 }
 
 .banner p {
-    color: var(--text);
-    font-size: 5vw;
-    text-align: center;
-    margin-top: 15px;
-    opacity: 60%;
+  color: var(--text);
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 15px;
+  opacity: 60%;
 }
 
 .banner-btn {
-    width: 35vw;
-    height: 5vh;
-    border-radius: 5px;
-    background-color: transparent;
-    color: var(--text);
-    font-weight: 800;
-    margin-top: 20px;
-    margin-left: 125px;
+  width: 35vw;
+  height: 5vh;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--text);
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 125px;
 }
 
+
 /* ================ TOURNAMENTS ================ */
+
+.points {
+  position: relative;
+  height: 200px;
+}
+
+.points video {
+  position: relative;
+  width: 85%;
+  top: -198px;
+  border-radius: 10px;
+  z-index: -999;
+}
+
+.content details summary{
+  width: 35vw;
+  height: 5vh;
+  align-content: center;
+  border-radius: 10px;
+  background: red;
+  font-size: 4.5vw;
+  font-weight: 600;
+  color: var(--text);
+  animation: highlight 2s linear infinite;
+  margin-bottom: 25px;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: blue;
+  }
+  20% {
+    background-color: violet;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: skyblue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+.content details table {
+  /* position: relative; */
+  color: var(--text);
+  font-size: 4.5vw;
+  line-height: 23px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* ================ UID ================ */
+
 
