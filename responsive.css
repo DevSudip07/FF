@@ -95,7 +95,37 @@
 .uid {
   color: red;
   text-align: center;
-  margin-top: 31vh;
+  margin-top: 40vh;
+}
+
+.uid-container {
+  background-color: red;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -50;
+}
+
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+  top: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
