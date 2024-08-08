@@ -238,7 +238,7 @@ legend{
   font-size: 20px;
 }
 
-button{
+.form-btn {
   border: none;
   outline: none;
   font-size: 20px;
