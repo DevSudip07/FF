@@ -32,5 +32,30 @@ setTimeout(function load() {
 , 2500);
 
 
+// =========== Form ===========
 
+var close = document.querySelector(".close");
+var form = document.querySelector(".register");
+var body = document.querySelector(".container");
+var open = document.querySelector(".apply");
 
+var z = 0;
+function formScroll() {
+  if(z == 1){
+    form.style.display = "none";
+  }else {
+    body.style.position = "fixed";
+    z = 1
+  }
+}
+open.addEventListener("click", ()=> {
+  form.style.display = "flex";
+  z = 1
+})
+close.addEventListener("click", ()=> {
+  form.style.display = "none";
+  body.style.position = "absolute";
+  z = 0;
+})
+
+formScroll()

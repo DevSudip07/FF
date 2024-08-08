@@ -128,5 +128,9 @@
   object-fit: cover;
 }
 
+.register form {
+  padding: 0px 25px;
+}
+
 
 }

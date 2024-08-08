@@ -5,6 +5,7 @@
   font-family: sans-serif;
 }
 
+
 :root {
   --text: white;
   --bg: #090909;
@@ -145,7 +146,124 @@
 }
 
 
+.register {
+  display: none;
+  align-items: center;
+}
 
+.register form{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 60px;
+  background-color: #403e41c0;
+  bottom: 0px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.title i {
+  font-size: 25px;
+  padding-left: 50px;
+}
+
+.form-content{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.67);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+legend{
+  font-size: 30px;
+}
+::placeholder{
+  font-size: 20px;
+}
+.name, .email, .id{
+  margin-top: 10px;
+}
+.name{
+  margin-top: 20px;
+}
+.name input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+}
+.email{
+  margin-top: 20px;
+}
+.email input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+}
+.id{
+  margin-top: 20px;
+}
+.id input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+}
+
+button{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.apply {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 10px 0px;
+  background-color: var(--bg);
+  color: var(--text);
+}
 
 
 /* ================ UID ================ */
