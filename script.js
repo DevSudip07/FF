@@ -41,7 +41,7 @@ var open = document.querySelector(".apply");
 
 var z = 0;
 function formScroll() {
-  if(z == 1){
+  if(z == 0){
     form.style.display = "none";
   }else {
     body.style.position = "fixed";
@@ -50,7 +50,8 @@ function formScroll() {
 }
 open.addEventListener("click", ()=> {
   form.style.display = "flex";
-  z = 1
+  body.style.position = "fixed";
+  z = 1;
 })
 close.addEventListener("click", ()=> {
   form.style.display = "none";
