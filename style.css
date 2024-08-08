@@ -251,7 +251,7 @@ legend{
 
 }
 
-button:hover{
+.form-btn:hover{
   background-color: black;
   color: white;
 }
