@@ -1,3 +1,6 @@
+
+// =========== Nav Bar ===========
+
 var menu = document.querySelector(".nav ul");
 var icon = document.querySelector("#toggle");
 var body = document.querySelector("body")
@@ -16,8 +19,7 @@ icon.addEventListener("click", ()=>{
 });
 
 
-
-
+// =========== Loader ===========
 
 document.addEventListener("contextmenu", function(e){
     e.preventDefault()
@@ -38,25 +40,31 @@ var close = document.querySelector(".close");
 var form = document.querySelector(".register");
 var body = document.querySelector(".container");
 var open = document.querySelector(".apply");
+var playWithUs = document.querySelector("#playwithus");
 
 var z = 0;
-function formScroll() {
-  if(z == 0){
-    form.style.display = "none";
-  }else {
-    body.style.position = "fixed";
-    z = 1
-  }
-}
-open.addEventListener("click", ()=> {
-  form.style.display = "flex";
-  body.style.position = "fixed";
-  z = 1;
-})
-close.addEventListener("click", ()=> {
-  form.style.display = "none";
-  body.style.position = "absolute";
-  z = 0;
-})
 
-formScroll()
+function register() {
+  function formScroll() {
+    if(z == 0){
+      form.style.display = "none";
+    }else {
+      body.style.position = "fixed";
+      z = 1
+    }
+  }
+  open.addEventListener("click", ()=> {
+    form.style.display = "flex";
+    body.style.position = "fixed";
+    z = 1;
+  })
+  close.addEventListener("click", ()=> {
+    form.style.display = "none";
+    body.style.position = "absolute";
+    z = 0;
+  })
+  
+  formScroll();
+}
+
+register();
